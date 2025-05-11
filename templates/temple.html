@@ -9,6 +9,11 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <!-- SweetAlert for beautiful alerts -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 
@@ -24,8 +29,9 @@
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
                     <li class="nav-item"><a class="nav-link" href="#products">Categories</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">Cart <span class="badge bg-danger">0</span></a>
-                    </li>
+                    <a class="nav-link" href="html/cart.html">
+                        Cart <span class="cart-counter badge bg-danger" style="display: none;">0</span>
+                    </a>
                 </ul>
             </div>
         </div>
@@ -35,8 +41,9 @@
         <header class="hero-section position-relative d-flex align-items-center text-center text-white mt-4" id="home">
             <div class="container text-center">
                 <h1 class="fw-bold display-4 animate-fade-in">Sacred Pooja Garlands</h1>
-                <p class="lead fs-3 mt-4 animate-fade-in">Divine Temple Flowers - Sacred garlands for daily rituals and festivals</p>
-                <p class="lead mt-3 animate-fade-in tamil-text" >
+                <p class="lead fs-3 mt-4 animate-fade-in">Divine Temple Flowers - Sacred garlands for daily rituals and
+                    festivals</p>
+                <p class="lead mt-3 animate-fade-in tamil-text">
                     <span>தெய்வீக கோவில் மலர்கள் - தினசரி வழிபாடு மற்றும் திருவிழாக்களுக்கான புனித மாலைகள்</span>
                 </p>
             </div>
@@ -71,7 +78,7 @@
                                     <button class="btn btn-outline-success btn-sm me-2">
                                         <i class="far fa-heart"></i> Wishlist
                                     </button>
-                                    <button class="btn btn-success btn-sm">
+                                    <button class="btn btn-success btn-sm add-to-cart">
                                         <i class="fas fa-shopping-cart"></i> Add to Cart
                                     </button>
                                 </div>
@@ -100,7 +107,7 @@
                                     <button class="btn btn-outline-success btn-sm me-2">
                                         <i class="far fa-heart"></i> Wishlist
                                     </button>
-                                    <button class="btn btn-success btn-sm">
+                                    <button class="btn btn-success btn-sm add-to-cart">
                                         <i class="fas fa-shopping-cart"></i> Add to Cart
                                     </button>
                                 </div>
@@ -129,7 +136,7 @@
                                     <button class="btn btn-outline-success btn-sm me-2">
                                         <i class="far fa-heart"></i> Wishlist
                                     </button>
-                                    <button class="btn btn-success btn-sm">
+                                    <button class="btn btn-success btn-sm add-to-cart">
                                         <i class="fas fa-shopping-cart"></i> Add to Cart
                                     </button>
                                 </div>
@@ -159,7 +166,7 @@
                                     <button class="btn btn-outline-success btn-sm me-2">
                                         <i class="far fa-heart"></i> Wishlist
                                     </button>
-                                    <button class="btn btn-success btn-sm">
+                                    <button class="btn btn-success btn-sm add-to-cart">
                                         <i class="fas fa-shopping-cart"></i> Add to Cart
                                     </button>
                                 </div>
@@ -189,10 +196,10 @@
                                     <button class="btn btn-outline-success btn-sm me-2">
                                         <i class="far fa-heart"></i> Wishlist
                                     </button>
-                                    <button class="btn btn-success btn-sm">
+                                    <button class="btn btn-success btn-sm add-to-cart">
                                         <i class="fas fa-shopping-cart"></i> Add to Cart
                                     </button>
-                                </div>
+                                </div> 
                             </div>
                         </div>
                     </div>
@@ -207,5 +214,7 @@
     </footer>
 
 </body>
+
+<script src="cart.js"></script>
 
 </html>
